@@ -1,6 +1,13 @@
-num=int(input ())
-for i in range(2,num+1):
-    if (num%2!=0):
-        print (" Prime")
-    else:
-        print("not prime")    
+import math
+num=int(input("Enter the number:"))
+if num<=1:
+    return False
+if num==2:
+    return True
+ if num%2==0:
+     return False
+for i in range(3,int(math.sqrt(num)+1),2)::
+    if (num%i==0):
+        return False
+return True
+      
